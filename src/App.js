@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from 'react'
+import Departments from './components/Departaments';
+import Users from './components/Users';
+import './index.css'
 
+const LoadingContext = React.createContext({
+  loading: false,
+  message: null,
+  showLoading: message => { },
+  hideLoading: () => { }
+})
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Users />
+      <Departments />
+    </Fragment>
   );
 }
 
