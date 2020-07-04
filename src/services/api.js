@@ -5,9 +5,3 @@ export const getUsers = async () => {
         resolve(users)
     }, 2000))
 }
-
-export const getDepartments = async () => {
-    return new Promise(resolve => setTimeout(() => {
-        resolve(departaments)
-    }, 1500))
-}

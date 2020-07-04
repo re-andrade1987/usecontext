@@ -1,5 +1,5 @@
 import React from 'react' 
- 
+
 import Spinner from 'react-spinkit' 
  
 const Loading = ({ loading, message }) => { 
@@ -7,9 +7,9 @@ const Loading = ({ loading, message }) => {
         <div className='overlay-content'> 
             <div className='wrapper'> 
                 <Spinner 
-                    name='ball-pulse-rise' 
+                    name='ball-clip-rotate-multiple' 
                     fadeIn='none' 
-                    color='yellow' 
+                    color='blue' 
                 /> 
                 <span className='message'> 
                     {message} 
